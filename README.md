@@ -1,2 +1,2 @@
 # 30-days-Coding-Challeng
-I will try to do code 30 minutes daily for 30 days
+I am learning code online for 30 minutes a day for a few months.
