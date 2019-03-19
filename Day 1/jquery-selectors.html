@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>jQuery Selectors</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                alert("Ready");
+                // Element Selector
+                $('button').click(function(){
+                    $('i').hide();
+                });
+
+                // Id Selector
+                $("h1").click(function(){
+                    $('#hide_this').hide();
+                });
+
+                // Class selector
+                $("h2").click(function(){
+                    $(".hide_this").hide();
+                });
+
+                // hide all
+                $("h3").click(function(){
+                    $("*").hide();
+                });
+
+                $("h4").click(function(){
+                    $(this).hide();
+                });
+
+            });
+        </script>
+    </head>
+    <body>
+        <!--Element Selectors-->
+        <button>Click here</button>
+        <i>Hide me</i>
+
+        <!--ID Selectors-->
+        <h1>Hide His</h1>
+        <p id="hide_this">Click button to hide me</p>
+
+        <!--Class Selectors-->
+        <h2>Hide His</h2>
+        <p class="hide_this">Class Example: Click button to hide me</p>
+
+        <!--hide all-->
+        <h3>Hide All</h3>
+
+        <!--This-->  
+        <h4>Hide my self</h4>
+    </body>
+</html>
