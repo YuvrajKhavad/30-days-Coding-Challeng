@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Effects - Hide and Show</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+        $(document).ready(function(){
+            
+            // hide paragraph
+            $("#hide").click(function(){
+                $("p").hide();
+            });
+
+            // show paragraph
+            $("#show").click(function(){
+                $("p").show();
+            });
+
+        });
+        </script>
+    </head>
+    <body>
+        <button id="hide">Hide</button>
+        <button id="show">Show</button>
+        <p>This is a paragaraph</p>
+    </body>
+</html>
