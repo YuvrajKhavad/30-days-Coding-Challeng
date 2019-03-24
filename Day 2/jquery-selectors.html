@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>jQuery Selectors</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function()
+            {
+                // hide all those have same class
+                $('button').click(function()
+                {
+                   $("p.intro").hide();
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <h4 class="intro">This is a text</h4>
+        <p class="intro">This is a another text with class</p>
+        <p>This is a text without class</p>
+        <button>Click here</button>
+    </body>
+</html>

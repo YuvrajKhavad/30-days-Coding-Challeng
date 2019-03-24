@@ -1,0 +1,36 @@
+<html>
+
+<head>
+    <title>Selects the first li element of the first ul</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function ()
+        {
+            $('button').click(function ()
+            {
+                $("ul li:first").hide();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <p>First list</p>
+    <ul>
+        <li>Jayraj</li>
+        <li>Yuvraj</li>
+        <li>Amiraj</li>
+    </ul>
+
+
+    <p>Second list</p>
+    <ul>
+        <li>Mahipal</li>
+        <li>Jaypal</li>
+        <li>Shivraj</li>
+        <li>Vanraj</li>
+    </ul>
+    <button>Click here</button>
+</body>
+
+</html>

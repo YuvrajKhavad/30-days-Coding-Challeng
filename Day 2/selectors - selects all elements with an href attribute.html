@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Selects all elements with an href attribute</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function()
+            {
+                $('button').click(function()
+                {
+                    $("[href]").hide();
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <h4>This is a first heading</h4>
+        <h4>This is a second heading</h4>
+        <p>This is a first text</p>
+        <p>This is a second text</p>
+
+        <p><a href="https://www.w3schools.com/html/">This is a link</a></p>
+        <p><a href="https://www.w3schools.com/html/">This is a second link</a></p>
+        <button>Click here</button>
+    </body>
+</html>
