@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>focus and blur Event</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function()
+            {
+                // hide method
+                $("#firt_p").on("click", function(){
+                    $(this).hide();
+                });
+
+                // one events
+                $("#on_event").on
+                (
+                    {
+                        mouseenter: function()
+                        {
+                           $(this).css("background-color","red");
+                        },
+
+                        mouseleave: function()
+                        {
+                            $(this).css("background-color","yellow");
+                        },
+
+                        click: function()
+                        {
+                            $(this).css("background-color","green");
+                        }
+                    }
+                );
+
+            });
+        </script>
+    </head>
+    <body>
+       <p id = "firt_p">This is a first paragraph</p>
+
+       <p id ="on_event">On events will perform here</p>
+    </body>
+</html>

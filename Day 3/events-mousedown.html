@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>mousedown Event</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function()
+            {
+                $("#first_heading").mousedown(function(){
+                    alert("mousedown on first paragraph");
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <p id="first_heading">This is a paragraph</p>
+    </body>
+</html>

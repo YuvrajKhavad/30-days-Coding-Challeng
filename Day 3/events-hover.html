@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>hover Event</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function()
+            {
+                $("#first_heading").hover(function()
+                {
+                    alert("You entery in first paragraph");
+                },
+                function()
+                {
+                    alert("You leave from first paragraph");
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <p id="first_heading">This is a paragraph</p>
+    </body>
+</html>
