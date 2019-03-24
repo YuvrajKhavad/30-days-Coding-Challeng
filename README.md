@@ -7,4 +7,6 @@ Day #1 jQuery Ready function and selector methods
 
 Day #2 jQuery Selectors
 
-Day #3 jQuery jQuery events and methods
+Day #3 jQuery events and methods
+
+Day #4 jQuery Effects

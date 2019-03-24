@@ -15,6 +15,23 @@
                 $("p").show();
             });
 
+
+            //hide and show with speed parameter
+            $("#button_id").click(function(){
+               $("#speed_id").hide('slow');     
+            });
+
+             //hide and show with speed parameter
+            $("#show_button_id").click(function(){
+               $("#speed_id").show('slow');     
+            });
+
+
+            // hide and show with toggel
+            $("#hideshow").click(function(){
+                $("#hideshow_text").toggle('slow');
+            });
+
         });
         </script>
     </head>
@@ -22,5 +39,15 @@
         <button id="hide">Hide</button>
         <button id="show">Show</button>
         <p>This is a paragaraph</p>
+
+        <!--Speed-->
+        <button id="button_id">hide Button</button>
+        <button id="show_button_id">Show Button</button>
+        <p id ="speed_id">This is a paragaraph for speed example</p>
+
+        <!--toggle-->
+        <button id="hideshow">Hide & Show</button>
+        <p id="hideshow_text">Hide and show with toggle paragaraph</p>
+        
     </body>
 </html>
