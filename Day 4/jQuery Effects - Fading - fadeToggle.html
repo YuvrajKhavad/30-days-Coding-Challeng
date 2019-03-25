@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>jQuery Effects - Fading</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+        $(document).ready(function()
+        {
+            $("button").click(function()
+            {
+                $("#block1").fadeToggle();
+                $("#block2").fadeToggle("slow");
+                $("#block3").fadeToggle(3000);
+            });
+        });
+        </script>
+    </head>
+    <body>
+        <button>Click here to fade</button>
+        <div id="block1" style="width: 50px; height:50px; background-color:blue;"></div><br>
+        <div id="block2" style="width: 50px; height:50px; background-color:coral;"></div><br>
+        <div id="block3" style="width: 50px; height:50px; background-color:darkgreen;"></div>
+    </body>
+
+</html>
