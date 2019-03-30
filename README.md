@@ -9,4 +9,6 @@ Day #2 jQuery Selectors
 
 Day #3 jQuery events and methods
 
-Day #4 jQuery Effects
+Day #4 jQuery Effects Fading
+
+Day #5 jQuery Effects Sliding
