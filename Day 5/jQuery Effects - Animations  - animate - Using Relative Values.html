@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>jQuery Effects - Animations  - animate - Using Relative Values</title>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("button").click(function(){
+                    $("div").animate({
+                        left: '250px',
+                        height: '+=150px',
+                        width: '+=150px'
+                    });
+                });
+            });
+        </script>
+    <head>  
+    <body>
+        <button>Start Animations</button>
+        <p>By default, all HTML elements have a static position, and cannot be moved. To manipulate the position, remember to first set the CSS position property of the element to relative, fixed, or absolute!</p>
+        <div style="background:blueviolet;height: 200px; width: 200px;position: absolute;"></div>
+    </body>  
+</html>
