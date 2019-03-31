@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>Effects - Sliding - slideDown</title>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+        $(document).ready(function(){
+            $('#flip').click(function(){
+                $("#panel").slideDown(5000);
+            });
+
+            $("button").click(function(){
+                $("#panel").stop();
+            });
+        });
+        </script>
+        <style>
+        #flip, #panel
+        {
+            padding: 5px;
+            text-align: center;
+            background-color:aquamarine;
+            border:solid 1px #c3c3c3;
+        }
+        #panel
+        {
+            padding: 50px;
+            display: none;
+        }
+        </style>
+    </head>
+    <body>
+        <div id="flip">Click to slide down panel</div>
+        <div id="panel">Hello world!</div>
+        <button>Stop Animation</button>
+    </body>
+</html>
