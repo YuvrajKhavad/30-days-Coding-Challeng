@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>jQuery HTML Get Content - text(), html(), and val()</title>
+        <title>jQuery HTML Get Content - text(), html(), attr(), and val()</title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script>
         $(document).ready(function(){
@@ -9,9 +9,18 @@
             });
 
             $("#btn2").click(function(){
-        
                 alert("HTML :" + $("#test").html());
-            });   
+            });
+
+            // get value
+            $("#get_values").click(function(){
+                alert("Values :" + $("#name").val());
+            });
+
+            // get link 
+            $("#get_link").click(function(){
+                alert($("#link").attr("href"));
+            });
         });
         </script>
     </head>
@@ -19,5 +28,14 @@
         <p id="test">This is some <b>bold</b> text in a paragraph.</p>
         <button id="btn1">Show text</button>
         <button id="btn2">Show HTML</button>
+        <br/><br/> 
+        <p>Name <input type="name" id="name" value="Yuvraj Khavad"></p>
+        <button id="get_values">Get Values</button>
+
+
+        <br/><br/> 
+
+        <p><a id="link" href="https://zindex.co.in">Z Index Solutions</a></p>
+        <button id="get_link">Get Link</button>
     </body>
 </html>

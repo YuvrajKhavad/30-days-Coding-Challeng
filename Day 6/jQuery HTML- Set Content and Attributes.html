@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>jQuery - Set Content and Attributes</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+        $(document).ready(function(){
+            // set text
+            $("#set_text_button").click(function(){
+                $("#set_text").text("Hello, This is a new text");
+            });
+
+            // set HTML
+            $("#set_HTML_button").click(function(){
+                $("#set_html").html("<b>This is a HTML</b>");
+            });
+
+            // set Values
+            $("#set_value_button").click(function(){
+                $("#set_value").val("Yuvraj Khavad");
+            });
+
+        });
+        </script>
+    </head>
+    <body>
+        <p id="set_text">Set your text here</p>
+        <p id="set_html"> set your HTML here</p>
+        <p> Text Field: <input type="text" id="set_value" value="Z Index"></p>
+        <button id="set_text_button">Set Text</button>
+        <button id="set_HTML_button">Set HTML</button>
+        <button id="set_value_button">Set Values</button>
+    </body>
+</html>
