@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>jQuery - Remove Elements</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function()
+            {
+                $("#add_class").click(function()
+                {
+
+                    //$("p").addClass("blue");
+                   // $("h6").addClass("important");
+
+                   // Add both the class
+                   //$("p").addClass("blue important");
+                   //$("h6").addClass("blue important");
+
+                   // Toggle Class
+                   $("p, h6").toggleClass("blue important");
+                });
+            });
+        </script>
+        <style>
+        .important {
+            font-weight: bold;
+            font-size: xx-large;
+        }
+
+        .blue {
+            color: blue;
+        }
+        </style>
+    </head>
+
+    <body>
+        <p>This is a text</p>
+        <p>This is a second text</p>
+        <h6>This is big text</h6>
+        <button id="add_class">Add Class</button>
+    </body>
+</html>

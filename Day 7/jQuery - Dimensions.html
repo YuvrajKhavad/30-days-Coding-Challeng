@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>jQuery - Dimensions</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function()
+            {
+                $("button").click(function(){
+                    var text_data = "";
+                    text_data += "Width = " + $("#div1").width()+ "<br/>";
+                    text_data +=  "Height = " + $("#div1").height()+ "<br/>";
+                    $("#div1").html(text_data);
+
+                    var inner_data = "";
+                    inner_data += "Inner Widt = " + $("#div2").innerWidth()+ "<br/>";
+                    inner_data += "Inner Height = " + $("#div2").innerHeight();
+                    $("#div2").html(inner_data);
+
+                    var outer_data = "";
+                    outer_data += "Outer Width = "+ $("#div2").outerWidth(true) + "<br/>";
+                    outer_data +=  "Outer Height = "+ $("#div2").outerHeight(true);
+                    $("#div3").html(outer_data);
+
+                    $("#div4").height(200).width(600);
+                });
+            });
+        </script>
+        <style>
+            #div1, #div2, #div3, #div4 {
+                height: 100px;
+                width: 300px;
+                padding: 10px;
+                margin: 3px;
+                border: 1px solid blue;
+                background-color: lightblue;
+                }
+        </style>
+    </head>
+
+    <body>
+        <div id="div1"></div>
+        <br/>
+        <div id="div2"></div>
+        <br/>
+        <div id="div3"></div>
+
+        <br/>
+        <div id="div4"></div>
+        <button>Calculate Dimensions</button>
+    </body>
+</html>

@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>jQuery - Remove Elements</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function()
+            {
+                $("#remove").click(function(){
+                    $("#div").remove();
+                });
+
+                $("#empty").click(function(){
+                    $("#div2").empty();
+                });
+
+                $("#remove_filter").click(function(){
+                    $("p").remove(".filter");
+                });
+            });
+        </script>
+    </head>
+
+    <body>
+        <div id="div" style="background:yellow">
+            <p>This is a test</p>
+            <p>This is a second test</p>
+            <h1>Hello!!</h1>
+        </div>
+        <button id="remove">Remove </button>
+
+        <div id="div2" style="height:200px;width:800px;border:1px solid black;background-color:greenyellow;">
+            <p>This is a test</p>
+            <p>This is a second test</p>
+            <h1>Hello!!</h1>
+        </div>
+        <button id="empty">Empty</button>
+
+        <p class="filter">This is filter example</p>
+        <p class="filter">This is second filter example</p>
+
+        <button id="remove_filter">remove with filter</button>
+    </body>
+</html>

@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>jQuery - Add Elements</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function()
+            {
+                $("#append_button").click(function()
+                {
+                    $("#append_id").append(' This is a append text');
+                });
+
+                $("#prepend_button").click(function()
+                {
+                    $("#prepend_id").prepend(' This is a prepend text');
+                });
+
+                $("#after_button").click(function(){
+                    $("#for_after_before").before("This is a before content");
+                });
+
+                $("#before_button").click(function(){
+                    $("#for_after_before").after("This is a after content");
+                });
+            });
+        </script>
+    </head>
+
+    <body>
+        <p id="append_id">This is a first text.</p>
+        <button id="append_button">Append</button>
+
+        <p id="prepend_id"> This is a first text.</p>
+        <button id="prepend_button">Prepend</button>
+
+        <h1 id="for_after_before">This is a text</h1>
+        <button id="after_button">After</button>
+        <button id="before_button">Before</button>
+    </body>
+</html>
