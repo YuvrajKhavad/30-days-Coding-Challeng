@@ -6,22 +6,26 @@
  * @copyright 2019 Z Index Solutions
  */
 
- class Person {
+ class Person
+ {
     private $_name;
     private $_job;
     private $_age;
 
-    public function __construct($name, $job, $age){
+    public function __construct($name, $job, $age)
+    {
         $this->_name = $name;
         $this->_job = $job;
         $this->_age = $age;
     }
 
-    public function changeJob($newJob){
+    public function changeJob($newJob)
+    {
         $this->_job = $newJob;
     }
 
-    public function happyBirthday(){
+    public function happyBirthday()
+    {
         ++$this->_age;
     }
  }
@@ -43,3 +47,4 @@ $person2->happyBirthday();
 echo "<pre>Person 1: ", print_r($person1, TRUE), "</pre>";
 echo "<pre>Person 2: ", print_r($person2, TRUE), "</pre>";
 ?>
+

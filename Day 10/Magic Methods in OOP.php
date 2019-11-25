@@ -35,7 +35,7 @@ $obj = new MyClass;
 
 // get value of property from both objects
 echo $obj->getPropert();
- 
+
 echo $obj;
 
 unset($obj);

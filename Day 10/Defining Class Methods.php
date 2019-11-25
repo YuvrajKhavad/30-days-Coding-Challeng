@@ -1,15 +1,12 @@
 <?php
-class MyClass
-{
+class MyClass{
     public $prop1 = "I'm a class property!";
 
-    public function setProperty($newval)
-    {
+    public function setProperty($newval){
         $this->prop1 = $newval;
     }
 
-    public function getPropert()
-    {
+    public function getPropert(){
         return $this->prop1 . "</br>";
     }
 }
@@ -27,3 +24,7 @@ $obj1->setProperty("I belong to the second instance!");
 echo $obj->getPropert();
 echo $obj1->getPropert();
 ?>
+
+
+
+
